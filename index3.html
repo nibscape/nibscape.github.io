@@ -1,0 +1,772 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Coding Example</title>
+	<link rel="stylesheet" href="https://use.typekit.net/dip4foh.css"> 															<!-- Connect to Adobe Typekit Kit -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine"> 											<!-- Connect to Google Fonts - This Specific Type Family -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> 												<!-- Connect to Google Fonts - This Specific Type Family -->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,300i,400,400i,500,500i,700,700i" rel="stylesheet"> 	<!-- Connect to Google Fonts - This Specific Type Family -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<!-- Connect to Font Awesome -->
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Connect to Bootstrap 4 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Bootstrap: Mobile First Strategy -->
+	<style>
+	   html {
+  		font-size: 100%; /* font-size 1em = 10px on default browser settings */
+		}
+		/* Typeface - LOCAL FOLDER FONTS -------------------------------------------------- */
+	    @font-face {
+	    font-family: 'Helvetica Neue Light Standard Medium';
+	    src:  
+			url('/fonts/helveticaneue/HelveticaNeueLTStd-Md.otf') format('otf'),
+			url('/fonts/helveticaneue/HelveticaNeueLTStd-Md.eot') format('eot'),
+			url('/fonts/helveticaneue/HelveticaNeueLTStd-Md.woff') format('woff'),  
+			url('/fonts/helveticaneue/HelveticaNeueLTStd-Md.svg') format('svg'),
+			url('/fonts/helveticaneue/HelveticaNeueLTStd-Md.woff2') format('woff2');
+	    font-weight: normal;
+	    font-style: normal;
+		}
+	    @font-face {
+	    font-family: 'DIN Pro Black';
+	    src:  
+			url('/fonts/din/dinpro-black-webfont.otf') format('otf'),
+			url('/fonts/din/dinpro-black-webfont.eot') format('eot'),
+			url('/fonts/din/dinpro-black-webfont.woff') format('woff'),  
+			url('/fonts/din/dinpro-black-webfont.svg') format('svg'),
+			url('/fonts/din/dinpro-black-webfont.woff2') format('woff2');
+	    font-weight: normal;
+	    font-style: normal;
+		}
+		@font-face {
+	    font-family: 'Expert Sans Light';
+	    src:  
+			url('/fonts/Expert/expertsans-light-webfont.ttf') format('ttf'),
+			url('/fonts/Expert/expertsans-light-webfont.eot') format('eot'),
+			url('/fonts/Expert/expertsans-light-webfont.woff') format('woff'),  
+			url('/fonts/Expert/expertsans-light-webfont.svg') format('svg'),
+			url('/fonts/Expert/expertsans-light-webfont.woff2') format('woff2'),
+	    font-weight: normal;
+	    font-style: normal;
+		}
+	    @font-face {
+	    font-family: 'Expert Sans Light Italic';
+	    src:  
+			url('/fonts/Expert/expertsans-lightitalic-webfont.ttf') format('ttf'),
+			url('/fonts/Expert/expertsans-lightitalic-webfont.eot') format('eot'),
+			url('/fonts/Expert/expertsans-lightitalic-webfont.woff') format('woff'),  
+			url('/fonts/Expert/expertsans-lightitalic-webfont.svg') format('svg'),
+			url('/fonts/Expert/expertsans-lightitalic-webfont.woff2') format('woff2'),
+	    font-weight: normal;
+	    font-style: normal;
+		}	
+
+		    @font-face {
+	    font-family: 'Expert Sans Regular';
+	    src:  
+			url('/fonts/Expert/expertsans-regular-webfont.ttf') format('ttf'),
+			url('/fonts/Expert/expertsans-regular-webfont.eot') format('eot'),
+			url('/fonts/Expert/expertsans-regular-webfont.woff') format('woff'),  
+			url('/fonts/Expert/expertsans-regular-webfont.svg') format('svg'),
+			url('/fonts/Expert/expertsans-regular-webfont.woff2') format('woff2'),  
+	    font-weight: normal;
+	    font-style: normal;
+		}
+		    @font-face {
+	    font-family: 'Expert Sans Regular Italic';
+	    src:  
+			url('/fonts/Expert/expertsans-regularitalic-webfont.ttf') format('ttf'),
+			url('/fonts/Expert/expertsans-regularitalic-webfont.eot') format('eot'),
+			url('/fonts/Expert/expertsans-regularitalic-webfont.woff') format('woff'),  
+			url('/fonts/Expert/expertsans-regularitalic-webfont.svg') format('svg'),
+			url('/fonts/Expert/expertsans-regularitalic-webfont.woff2') format('woff2');
+	    font-weight: normal;
+	    font-style: normal;
+		}	
+		    @font-face {
+	    font-family: 'Expert Sans Bold';
+	    src:  
+			url('/fonts/Expert/expertsans-bold-webfont.ttf') format('ttf'),
+			url('/fonts/Expert/expertsans-bold-webfont.eot') format('eot'),
+			url('/fonts/Expert/expertsans-bold-webfont.woff') format('woff'),  
+			url('/fonts/Expert/expertsans-bold-webfont.svg') format('svg'),
+			url('/fonts/Expert/expertsans-bold-webfont.woff2') format('woff2');
+	    font-weight: normal;
+	    font-style: normal;
+		}		
+		/* Typeface - LOCAL FOLDER FONTS ---------------------------------------------------------------------------------------------------- */
+	    .LOCAL-HelveticaNeueLTStandardMed
+	    {
+	    	font-family: 'Helvetica Neue Light Standard Medium', sans-serif;
+	    }
+	    .LOCAL-DINProBlack 
+	    {
+	    	font-family: 'Din Pro Black', sans-serif;
+	    }
+	    .LOCAL-FontAwesomeRegular 
+	    {
+	    	font-family: 'Font Awesome Regular', sans-serif;
+	    }
+	    /* EXPERT */
+	    .LOCAL-ExpertSansLight
+	    {
+	    	font-family: 'Expert Sans Light', sans-serif;
+	    }
+		.LOCAL-ExpertSansLightItalic
+	    {
+	    	font-family: 'Expert Sans Light Italic', sans-serif;
+	    }
+	   	.LOCAL-ExpertSansRegular
+	    {
+	    	font-family: 'Expert Sans Regular', sans-serif;
+	    }
+	    .LOCAL-ExpertSansRegularItalic
+	    {
+	    	font-family: 'Expert Sans Regular Italic', sans-serif;
+	    }  
+	    .LOCAL-ExpertSansBold
+	    {
+	    	font-family: 'Expert Sans Bold', sans-serif;
+	    }   
+	    /* Typeface - GOOGLE FONTS ---------------------------------------------------------------------------------------------------- */
+	    .GOOGLE-Tangerine
+	    {
+	    	font-family: 'Tangerine';
+	    }
+	    .GOOGLE-Roboto
+	    {
+	    	font-family: 'Roboto';
+	    }
+	    .GOOGLE-LibreFranklin
+	    {
+	    	font-family: 'Libre Franklin';
+	    }
+	    .GOOGLE-LibreFranklin-Light300
+	    {
+	    	font-family: 'Libre Franklin';
+	    	font-weight: 300;
+	    }
+	    .GOOGLE-LibreFranklin-Light300Italic
+	    {
+	    	font-family: 'Libre Franklin';
+	    	font-weight: 300;
+	    	font-style: italic;
+	    }
+	    .GOOGLE-LibreFranklin-Regular400
+	    {
+	    	font-family: 'Libre Franklin';
+	    	font-weight: 400;
+	    }
+	    .GOOGLE-LibreFranklin-Regular400Italic
+	    {
+	    	font-family: 'Libre Franklin';
+	    	font-weight: 400;
+	    	font-style: italic;
+	    }
+	    .GOOGLE-LibreFranklin-Medium500
+	    {
+	    	font-family: 'Libre Franklin';
+	    	font-weight: 500;
+	    }
+	    .GOOGLE-LibreFranklin-Medium500Italic
+	    {
+	    	font-family: 'Libre Franklin';
+	    	font-weight: 500;
+	    	font-style: italic;
+	    }
+	    .GOOGLE-LibreFranklin-Bold700
+	    {
+	    	font-family: 'Libre Franklin';
+	    	font-weight: 700;
+	    }
+	    .GOOGLE-LibreFranklin-Bold700Italic
+	    {
+	    	font-family: 'Libre Franklin';
+	    	font-weight: 700;
+	    	font-style: italic;
+	    }
+	     /* Typeface - ADOBE TYPEKIT ---------------------------------------------------------------------------------------------------- */
+	    .ADOBE-HouseScript 
+	    {
+		  font-family: 'house-script';
+		}
+	    .ADOBE-Din2014
+	    {
+		  	font-family: 'din-2014', sans-serif;
+		}
+	    .ADOBE-Din2014ExtraBold
+	    {
+			font-family: din-2014, sans-serif;
+			font-style: normal;
+			font-weight: 800;
+		}
+		.ADOBE-URWDinCondensedMedium
+		{
+			font-family: 'urw-din-condensed', sans-serif;
+			font-style: normal;
+			font-weight: 500;			
+		}		
+		.ADOBE-URWDinBlack
+		{
+			font-family: 'urw-din-condensed', sans-serif;
+			font-style: normal;
+			font-weight: 500;			
+		}
+
+		.ADOBE-URWDinCondensedBold
+		{
+			font-family: 'urw-din-condensed', sans-serif;
+			font-style: normal;
+			font-weight: 700;
+		}
+		.ADOBE-URWDinCondensedBlack
+		{
+			font-family: 'urw-din-condensed', sans-serif;
+			font-style: normal;
+			font-weight: 900;
+		}
+		/* Typeface - CLASSES -------------------------------------------------- */
+		p
+		{
+	    	font-family: 'Libre Franklin';
+	    	font-weight: 400;
+	    	font-size: 16px;
+	    	line-height: 28px;
+	    	color: rgb(102, 102, 102);
+		}
+		p.lead
+		{
+			font-weight: 500;
+			color: rgb(230, 107, 84);
+			border-bottom-color: rgb(230, 107, 84);
+			border-bottom-width: 2px;
+			border-bottom-style: solid;
+			border-top-color: rgb(230, 107, 84);
+			border-top-width: 2px;
+			border-top-style: solid;
+			padding: 10px 0px 10px 0px;
+		}
+		.jumbotron .lead 
+		{
+			color: rgb(65, 65, 65);
+			font-size: 16px;
+			line-height: 18px;
+	    	font-family: 'Libre Franklin';
+	    	font-weight: 300;
+	    	font-style: italic;
+
+		}
+		.card
+		{
+			background-color: rgb(230, 107, 84);
+			color: rgb(255, 255, 255);
+		}
+		.card-text
+		{
+			color: rgb(255, 255, 255);
+		}
+		.card-title
+		{
+			color: rgb(255, 255, 255);
+		}
+		/* Attempt at presenting Cover Slide image -------------------------------------------------- */
+		.jumbotron
+		{
+		 background-image: url('images/IMG - SLIDE Title BG.jpg');
+		 background-size: cover;
+		 background-repeat: no-repeat;
+		}
+</style>
+
+</head>
+<body>
+	<div class="container" style="display: none;">
+		<h1>LOCAL OSX FONTS</h1>
+		<p><span class="LOCAL-HelveticaNeueLTStandardMed">This is a LOCAL FOLDER font, Helvetica Neue LT Standard Med</span><p>
+		<p><span class="LOCAL-DINProBlack">This is a LOCAL FOLDER font, DIN Pro Black</span></p>
+		<p><span class="LOCAL-ExpertSansLight">This is a LOCAL FOLDER font, Expert Sans Light</span></p>
+		<p><span class="LOCAL-ExpertSansLightItalic">This is a LOCAL FOLDER font, Expert Sans Light Italic</span></p>
+		<p><span fontfamily="Expert Sans Light Italic">This is a LOCAL FOLDER font, Expert Sans Light Italic FONT FAMILY VERSION</span></p>
+		<p><span class="LOCAL-ExpertSansRegular">This is a LOCAL FOLDER font, Expert Sans Regular</span></p>
+		<p><span class="LOCAL-ExpertSansRegularItalic">This is a LOCAL FOLDER font, Expert Sans Regular Italic</span></p>
+		<p><span class="LOCAL-ExpertSansBold">This is a LOCAL FOLDER font, Expert Sans Bold</span></p>
+		<p>
+			<span class="LOCAL-FontAwesomeRegular">This is a LOCAL FOLDER font, FontAwesome Regular</span>
+			<i class="fas fa-stroopwafel"></i>
+			<i class="fas fa-bicycle"></i>
+			<i class="fas fa-bomb"></i>
+			<i class="fas fa-bone"></i>
+			<i class="fas fa-brush"></i>
+
+		</p>
+		<h1>GOOGLE FONTS</h1>
+		<p><span class="GOOGLE-Tangerine">						This is a GOOGLE font, Tangerine</span></p>
+		<p><span class="GOOGLE-Roboto">							This is a GOOGLE font, Roboto</span></p>
+		<p><span class="GOOGLE-LibreFranklin-Light300">			This is a GOOGLE font, Libre Franklin Light 300</span></p>
+		<p><span class="GOOGLE-LibreFranklin-Light300Italic">	This is a GOOGLE font, Libre Franklin Light 300 Italic</span></p>
+		<p><span class="GOOGLE-LibreFranklin-Regular400">		This is a GOOGLE font, Libre Franklin Regular 400</span></p>
+		<p><span class="GOOGLE-LibreFranklin-Regular400Italic">	This is a GOOGLE font, Libre Franklin Regular 400 Italic</span></p>
+		<p><span class="GOOGLE-LibreFranklin-Medium500">		This is a GOOGLE font, Libre Franklin Medium 500</span></p>
+		<p><span class="GOOGLE-LibreFranklin-Medium500Italic">	This is a GOOGLE font, Libre Franklin Medium 500 Italic</span></p>
+		<p><span class="GOOGLE-LibreFranklin-Bold700">			This is a GOOGLE font, Libre Franklin Bold 700</span></p>
+		<p><span class="GOOGLE-LibreFranklin-Bold700Italic">	This is a GOOGLE font, Libre Franklin Bold 700 Italic</span></p>
+		<h1>ADOBE TYPEKIT FONTS</h1>
+		<p><span class="ADOBE-HouseScript ">					This is a LOCAL font, HouseScript</span></p>
+		<p><span class="ADOBE-Din2014">							This is a LOCAL font, Din2014</span></p>
+		<p><span class="ADOBE-Din2014ExtraBold">				This is a LOCAL font, DIN 2014 Extra Bold</span></p>
+		<p><span class="ADOBE-URWDinCondensedMedium">			This is a LOCAL font, URW DIN Condensed Medium</span></p>
+		<p><span class="ADOBE-URWDinBlack">						This is a LOCAL font, URW DIN Black</span></p>
+		<p><span class="ADOBE-URWDinCondensedBold">				This is a LOCAL font, URW DIN Condensed Bold</span></p>
+		<p><span class="ADOBE-URWDinCondensedBlack">			This is a LOCAL font, URW DIN Condensed Black</span></p>
+	</div>
+
+	<div class="container">
+
+<div class="jumbotron">
+
+	<img src="images/IMG - LOGO Nascent.svg" width="33%">
+	<p class="lead">Our mission is to radically improve the lives of people<br />with autism by combining innovative university<br />research with cutting edge technologies.</p>
+
+ 	<p>
+ 		BOB ETZEL<br />
+		PRESIDENT AND CO-FOUNDER<br />
+		betzel@nascentstage.com<br />
+	</p>
+
+</div>
+
+
+		<br />
+		<img src="images/IMG - SLIDE Title.jpg" width="100%">
+		
+	<h3>Company Overview & Background</h3>
+	<p class="lead">
+		iSocial is a 3-dimensional virtual learning environment developed specifically to meet the social, educational, and therapeutic needs of students with special needs. Building on 7 years of research at the University of Missouri, iSocial allows students to learn in a virtual environment, free from the distractions and pressures they experience in a classroom environment.
+	</p>
+	<h4>UNIVERSITY RESEARCHED-BASED SOLUTIONS<h4>
+	<p>
+		Dr. Janine Stichter is a professor at the University of Missouri’s College of Education and the Thompson Center for Autism and Neurodevelopmental Disorders, specializing in the social and behavioral development of students with autism in a special education environment. 
+	</p>
+	<img src="images/IMG - LOGO Thompson Center.svg" width="50%">
+	<p>
+		Dr. Stichter has published over 80 peer-reviewed articles and provided over 120 international presentations, including the creation of The Social Competence Intervention curriculum. This curriculum, focused on social competence skills, is the result of $12m in federal grants over a span of seven years, during which she perfected 32 lessons proven to be effective in helping students with autism greatly improve their social skills.
+	</p>
+	<p>	 
+		To take the curriculum further, Dr. Stichter worked with Dr. Jim Laffey, an expert in educational software design, to deploy the curriculum in Wonderland, an open-source 3D environment. With the Wonderland solution, Dr. Stichter’s team continued research on how the environment could benefit students with autism. 
+	</p>
+	<p>	 
+		So far, The SCI Curriculum has been the subject of eight different university research studies across 61 classrooms, proving the efficacy of the program. For example, 65% of the children in a 3-year UNC Chapel Hill study showed “significant” improvement in all five Social Responsiveness Scale measures, relating directly to an improvement in social and communication skills.
+	</p>
+	<h3>INTELLECTUAL PROPERTY AND COMMERCIALIZATION PLAN</h3>
+	<p>	
+		Based on this research, the University of Missouri identified the commercial value of the solution and sought to provide the benefits of The SCI Curriculum to the entire special needs community. To do this, the University needed to engage a solid team of experienced entrepreneurs to take the solution to market.
+	</p>
+	<div class="card float-right" style="width: 18rem;">
+	  <div class="card-body">
+	    <p class="card-text">
+			“We are integrating state-of-the-art technology into iSocial- cloud delivery, mobile applications, telehealth, virtual environment, artificial intelligence, and a digital tether into our solution set. We are the first to introduce these disruptive technologies into educational and therapeutic solutions for children with ASD.” <strong>Bob Etzel, CEO, iSocial</strong>
+		</p>
+		</div>
+	</div>
+	<p>
+		The University identified iSocial as the company to take the solution worldwide. iSocial is a subsidiary of Nascent Stage Development (NSD), a technology product development company focused on education and healthcare solutions led by veteran entrepreneur and CEO, Bob Etzel. 
+	</p>
+	<p>	
+		Under the agreement negotiated with the University, iSocial will build a cloud-based learning solution and sell subscriptions to a global market with very low incremental cost and a low cost of customer acquisition. In return, iSocial has the exclusive rights for the next 99 years to market the University’s current and all future intellectual property developed for this curriculum. The 32 lessons will be updated to include student avatars, social media, a gaming reward system, and a parent portal. The University will retain ownership of their intellectual property and NSD will retain ownership of all the coding that creates and maintains the virtual learning environment and associated applications.
+	</p>
+	<p>	
+	<h4>ISOCIAL EXPERTISE</h4>
+	<p>
+		iSocial is led by a team of experienced education, healthcare, and technology entrepreneurs. The team is complemented with the knowledge and input of over 30 industry experts, including 9 PhDs.
+	</p>
+	<p>	
+		The iSocial team is led by Bob Etzel, Chief Executive Officer. Most recently, Bob served as the CEO of BrightEHR, an electronic health records company for mental health providers located on the University of Kansas campus. He previously founded two education companies focused on advanced emerging communications technologies. Bob led his team to successfully execute on educational projects of all sizes, including introducing modern wireless communications to the People’s Republic of China for Motorola and a three-year contract from The City of New York to train their 74 hospitals on mass decontamination after September 11th, 2001. 
+	</p>
+	<p>	
+		Wayne Morgan Ph.D. is an active partner and advisor to the iSocial team. Wayne was an executive and partner at Black & Veatch and the CIO for MRI Global. Wayne is also one of the founders of Netchemia, a startup that provided HR services to schools using a similar SaaS business model as iSocial. After expanding services to nearly 3,000 schools, Netchemia was successfully sold and Wayne exited the company. Wayne’s entrepreneurial experience and connections are invaluable to iSocial.
+	</p>
+	<p>	
+		Jeff Blackwood is the Chief Product Officer and manages the design and delivery of the iSocial solution. Jeff previously served as the CEO and Founder of Pathfinder Health Innovations, a national provider of autism therapy and insurance billing software. Jeff has been honored with the Microsoft Health Innovation Award, named a Healthcare Transformer by Startup Health, recognized as a Kauffman Foundation Top EdTech Connector, and as a member of HEMP and PIPELINE entrepreneurial organizations. Jeff currently serves on committees with the Autism Society of America and the Kansas City Area Life Sciences Institute, and is participating in autism research projects with Children’s Mercy Hospital. 
+	</p>
+	<h3>TAKING iSOCIAL TO THE WORLD</h3>
+	<p>
+		Having developed multiple, successful technology products, the NSD technologists combined their expertise with extensive input from interviews with special educators to greatly expand and amplify the availability of the University’s program. Based on the needs of today’s special education classroom, iSocial is combining the evidence-based curricula with a Learning Management System (LMS) and a modern 3D virtual environment built upon the Unity Platform be like a classroom in a modern online game. 
+	</p>
+	<div class="card float-right" style="width: 18rem;">
+	  <div class="card-body">
+	    <p class="card-text">
+			More mobile games are made with Unity than with any other game technology, with companies such as Disney, Electronic Arts, LEGO, Microsoft, NASA, Nickelodeon, Square Enix, Ubisoft, Obsidian, Insomniac and Warner Bros relying on our tools and features to drive their business.
+		</p>
+		</div>
+	</div>
+	<p>	
+		iSocial has chosen to outsource development of the software platform to a company with extensive experience developing custom software solutions, and is considered the one of the top developers of 3D environments using Unity are a preferred software developer for Apple, Google, Pearson Learning, NASA and Sony Music. Their programmers are all located in the USA. 
+	</p>
+	<p>	
+		iSocial has also signed an exclusive teaming agreement with Sandbox & Co, an international marketer of educational materials to over 20 million parents and teachers a month in 250 countries. They have searched for years for a way to help children with disabilities, and said that iSocial would be a perfect fit with their corporate objectives and virtual worlds that provide a “kid safe” learning environment.
+	</p>
+	<p>	
+		The Council of Administrators of Special Education (CASE) has agreed to review the research behind iSocial with the goal of providing their endorsement to the software. CASE reaches 130,000 school administrators of special education, and their endorsement is highly respected by education professionals. 
+ 	</p>
+	<p>	
+		With this solution, iSocial is leaping past paper and poster tools and introducing a solution focused on today’s students, providing them with a safe environment for learning critical social and living skills using technology that engages them as active participants in learning. 
+	</p>
+	<img src="images/IMG - LOGO Unity.svg" width="50%">
+	<img src="images/IMG - Unity Screenshot.jpg" width="100%">
+	<h3>Independence & the Cost of Autism</h3>
+	<p class="lead">
+		Since 2009, the incidence of reported Autism diagnosis has grown over 60%. The CDC now estimates that 1 in 68 children are being diagnosed with ASD; that equates to nearly 80,000 children born every year in the United States. 	
+	</p>
+	<p>
+		That means that there are currently 3.5 million people in the United States that are diagnosed on the Autism Spectrum that need some form of therapy, and while there isn’t an official global number for individuals with autism, many estimate that the population exceeds 25 million.  To put this in perspective, the entire population of Texas is 26 million.
+	</p>
+	<p>
+		In the United States, the responsibility for serving the special needs population falls on the public and private education system. There are over 1.5 million primary and secondary level children with autism, supported by several million more parents, educators, paras and other mental health professionals working to help these children.
+	</p>
+	<blockquote class="blockquote">
+		“The rapid growth of autism has overwhelmed the education system, putting teachers under stress and placing students in larger classrooms that inhibit their ability to learn critical social and communication skills.”
+	</blockquote>
+	<h4>SOCIAL COMPETITION CHALLENGES</h4>
+	<div class="card float-right" style="width: 18rem;">
+	  <div class="card-body">
+	    <p class="card-text">
+			A new study pegs autism’s economic costs for 2015 at an estimated $268 billion in the United States. The study, funded in part by Autism Speaks, projects costs rising to $461 billion in 2025 if autism’s prevalence remains flat at today’s rates. By contrast, if autism’s prevalence continues the steep rise seen over the last decade, the projected costs will top $1 trillion by 2025.
+		</p>
+		</div>
+	</div>
+	<p>
+		Due to poor social competence, individuals with autism experience decreased academic/job performance and few close relationships. Without these critical skills, individuals with autism will have difficulty throughout their lives, impacting the core liberties that define societal independence. 
+	</p>
+	<p>
+		Unemployment among adults with autism exceeds 85%, and underemployment and below-minimum wages are common among those considered employed. Studies have shown that the primary workplace challenges for an individual with autism center around social skills. Interactions with colleagues, understanding directions, and communicating with managers are required skills in the workplace, and social competence is a primary deficit in autism.
+	</p>
+	<p>
+		In addition, autism is not a life-limiting disorder. Individuals with autism can live a normal lifespan, well into their 70s and 80s. Skills like hygiene, cooking, toileting, cleaning, and medication management are critical to living an independent life, causing the task of caring for individuals without these skills to fall on aging parents and Medicaid-funded residential living facilities.
+	</p>
+	<img src="images/IMG - GRAPH Autism Prevalence.svg" width="66%">
+	<h3>Creating a New World</h3>
+	<p class="lead">
+		iSocial is a 3D virtual learning environment for teaching social competence to children and youth who have been diagnosed with Autism Spectrum Disorders (ASD) or have similar social deficits. iSocial enables social interaction and provides support for the development of social competence in a safe, completely controlled environment. 
+		<br /><br />
+		The program was developed through the University of Missouri and during the past seven years has been proven very effective in numerous university studies across the country.
+	</p>
+	<p>
+		The iSocial platform will combine elements of gaming using Unity, the top-rated software for generating 3D worlds, with the features of a Learning Management Solution (LMS). The environment is based on a scalable, HIPAA/FERPA-compliant SaaS model, allowing tens of thousands of concurrent users.
+	</p>
+	<p>
+		The iSocial School program is an annual subscription for the hosted virtual learning environment. The iSocial Home Adventures program for parents and students will offer brief games and exercises presented in the same 3D world, allowing students to independently explore and learn while maintaining a relationship with their avatar.
+	</p>
+	<h4>ISOCIAL SCHOOL:  B2B</h4>
+	<p>
+		iSocial School is an intructor-led 3D environment for engaging children with special needs in an active learning environment free from the distractions and pressures of the outside world. With the benefits of this environment, iSocial aims to bring evidence-based educational practices to therapists, educators, and school districts throughout the country; including rural and small school districts that may not have access to this type of intervention. 
+	</p>
+	<p>
+		The activities in iSocial’s initial curriculum are based on the Social Competence Intervention (SCI) curriculum developed by Dr. Janine Stichter, PhD professor at the University of Missouri. This curriculum is proven to maximize student learning and assist in skill acquisition and maintenance, and has been successfully implemented in 61 schools with hundreds of students. 
+	</p>
+	<p>
+		This curriculum consists of five units with a total of 32 lessons intended to complement other lesson plans. Throughout each lesson, implementers use evidence-based strategies (i.e., Cognitive Behavior Intervention, Applied Behavior Analysis, and Scaffolding) to monitor and improve the students’ social and behavioral skills. 
+	</p>
+	<p>
+		The five units are:
+	</p>
+	<ul>
+		<li>Recognizing Facial Expressions
+		<li>Problem Solving
+		<li>Understanding Feelings & Emotions
+		<li>Sharing Ideas
+		<li>Turn Taking in Conversation
+	</ul>
+	<img src="images/IMG - SLIDE iSocial Benefits.svg" width="100%">
+	<p>
+		Each lesson is approximately 45 minutes, during which learners participate with a small group of peers in immersive and interactive activities that target the development of social competence and are systematically sequenced to scaffold the students’ learning. 
+	</p>
+	<p class="lead">
+		Over 65% of the students involved in research of the curriculum showed improvement in all five areas, demonstrating a 29% increase in communication skills and a 31% increase in social motivation.
+	</p>
+		In iSocial, an instructor will set up a lesson and then meet a cohort of students in the iSocial 3D environment. The students and the intructor will be represented by avatars, providing an outlet for creativity and personal expression while also being the basis for a token reward system that reinforces positive behaviors. 
+	</p>
+	<p>
+		The intructor and students may be in the same physical environment or they can meet remotely, similar to SaaS-based telehealth, but with an “N to 1” ratio of students to intructor. Paraprofessionals can support both the intructor and students, as well. 
+	</p>
+	<p>
+		The curriculum is designed to strike a balance of direct teacher instruction, video and process modeling, and structure and naturalistic interactive learning through games and cooperative learning activities. It is meant to be highly engaging and realistic to encourage students to generalize and maintain the skills learned and practiced.  
+	</p>
+	<h4>ISOCIAL SCHOOL FAMILY: B2B/B2C</h4>
+	<p>
+		Through an additional license, parents can also log into iSocial, allowing them to interact and participate with their child as they engage in learning activities and homework. With some communication disorders, this may be the best chance for these parents to communicate effectively with their children and potentially providing a lifeline to be independent.
+	</p>
+	<p>
+		In addition, the iSocial platform can be used as a primary communication channel between the parent and intructors, allowing them to exchange notes on the student’s progress, alert intructors to any illness/sleep issues and exchange ideas for interactions that support the student’s growth. Parents can check grades, follow homework, and join their children in expanding their world. 
+	</p>
+	<h4>ISOCIAL ADVENTURES: B2B/B2C</h4>
+	<p>
+		Parents and educators have asked what we can provide to students after they complete the 32 lessons. Parents want something they can contribute in the evenings that supports and maintains what is learned in school. Educators and therapy practitioners like Speech Therapists want access to therapy and educational exercises they can prescribe to children and their parents. 
+	</p>
+	<p>
+		iSocial Adventures is a “home” version of the iSocial School environment, providing individuals with special needs a way to access select content within the iSocial world independent of a school program. It allows participants a chance to explore the iSocial world, engage with games with an underlying educational or therapeutic basis, and continue to enjoy the relationship they can create with online friends. 
+	</p>
+	<p>
+	All adventures have three common components:
+	</p>
+	<ul>
+		<li>A lesson plan and guide for parents to use for every activity
+		<li>A simple path to the adventure
+		<li>A reporting process to record progress made during exercises and generate reports
+	</ul>
+	<p>
+		Examples of some of the initial Adventures are being developed by team members, Matt Braun Ph.D., Keenan Stump Ph.D., and Gary Jesch. Matt and Keenan are creating a short-form live video library similar in format to popular YouTube videos covering skills in the same five skills on the Social Responsiveness Scale used in the School version. 
+	</p>
+	<p>
+		Gary Jesch is a digital puppeteer, and he has created a series of Adventures using characters like Marley the Fish for younger children, and Malachi, a teenage avatar worker at McDonald’s, for older children.
+	</p>
+	<p>
+		Examples of the scenes created by Matt and Keenan cover a variety of social interactions involving different activities, such as:
+		<ul>
+			<li>Ordering shoes, taking turns, dealing with changing plans
+			<li>Attending a birthday party
+			<li>Ordering and eating at McDonalds
+			<li>Riding an escalator -  Narrating feelings before during and after
+			<li>Playing a game with an action figure - Explaining the rules to the game
+		</ul>
+	</p>
+	<p>
+		Each Adventure contains coaching tips for the parents, progress notes, and fun for everyone.
+	</p>
+	<p>
+		Parents and educators can enhance the student’s experience by using some of the same games and exercises used in the classroom. This integrates home sessions with school sessions for maintenance, generalization, and supplemental development important to skill retention and growth. 
+	</p>
+	<h3>Market Definition</h3>
+	<p class="lead">
+		The market cap for iSocial’s virtual learning environment exceeds $1.8 billion in annual revenue opportunity. The solution has both B2B and B2C elements, allowing the solution to appeal to educators, parents, and children alike.
+	</p>
+	<p>
+	To define the market, iSocial cites the following information:
+	</p>
+	<h4>ISOCIAL TARGET MARKETS</h4>
+
+		Primary Market
+		<ul>
+			<li>Administrators/Educators in 130,000 public and private K-12 schools serving 3.5 million people in the United States with ASD (over 25m globally)
+		</ul>
+		Secondary Market
+		<ul>
+			<li>6.7 million students/families with special needs in the United States (13% of all public-school students) 
+		</ul>
+	</ul>
+	<h4>GROSS MARKET CAP</h4>
+	<li> Schools  - Public and private schools serving students with special needs represent a primary market for iSocial. 
+	<h2>130,000 schools x $5,000/year = $650M</h2>
+	<li> Families/Individuals – iSocial is intended for individuals with special needs, regardless of age. In addition to students with autism, iSocial can serve many individuals with special needs. There are 6.7 million students in special education classrooms in the United States, all of which could be prospective users of the iSocial platform. 
+	<h2>6.7M students x $18/mo (average) = $1.2B</h2>
+	<p>
+	Total School and Home potential is nearly $1.8 billion annually compared to cost of Autism in the USA of $268 billion1. Cost of lifelong care can be reduced by 2/3 with early diagnosis and intervention.2
+	</p>
+	<footer>
+		1 Buescher et al., 2014<br />
+		2 Autism. 2007 Sep;11(5):453-63; The economic consequences of autistic spectrum disorder among children in a Swedish municipality.
+	</footer>
+	<h3>Marketing & Sales Plan</h3>
+	<p class="lead">
+		iSocial’s management team includes sales and marketing experts experienced in delivering technology solutions to the education market. The sales plan includes a combination of direct sales, channel sales, and internet-based marketing resulting in self-service transactions.
+	</p>
+	<p>
+		<h4>DIRECT SALES</h4>
+		<p>
+		Showing the product to the customer is very important to iSocial’s sales strategy. The iSocial sales team will engage with prospects at conferences, roadshows, on the phone and via webinars. The primary goal will be to demonstrate how educators can engage children with special needs through our solution, requiring educated sales professionals that can demonstrate how the solution can benefit their classroom efforts. Because of this, a direct sales model using a combination of outside/inside sales techniques is required. 
+	</p>
+	<p>
+		Initially, the iSocial Management team will represent the primary sales force for iSocial. The management team includes multiple sales and marketing veterans that will build the initial customer base for the company.
+	</p>
+	<p>
+		As the company grows, iSocial will hire a direct sales team, with the goal of proactively contacting schools in pre-defined territories. When approaching the market, iSocial will use a hunter/gatherer model. “Hunter” salespeople acquire new business, and then hand the account off to “gatherer” customer service reps for the long-term management of the account. 
+	</p>
+	<p>
+		Ultimately, every two outside salespeople on the iSocial team will be supported by an Inside Salesperson, responsible for generating leads while the outside salespeople are the “closers.” Sales compensation is directly aligned with the goal of getting customers onboard and ramped through any trial period as quickly as possible.
+	</p>
+	<h4>MARKETING</h4>
+	<p>
+		Our marketing effort will center on the primary goal of introducing educators and parents to iSocial, showing them a safe environment that can open the world to a child with special needs. In addition, we’ll generate awareness among the primary influencers – children.  
+	</p>
+	<p>
+		iSocial School’s message will be promoted through media focused on professional educators, administrators, and therapists: 
+	</p>
+	<h4>CONFERENCES</h4>
+	<p>
+		There are numerous conferences on a local, national and international scale for special education. The key will be to choose tradeshows that align directly with our message and our target audience, and then attend those tradeshows with a solid demonstration and a well-targeted message. These conferences include:
+	</p>
+	<img src="images/IMG - LOGO AASA.svg" width="20%">
+	<img src="images/IMG - LOGO American Speech Hearing.svg" width="20%">
+	<img src="images/IMG - LOGO CEC.svg" width="20%">
+	<img src="images/IMG - LOGO CASP.svg" width="20%">
+
+	<table class="table">
+	  <thead>
+	    <tr>
+	      <th scope="col">Acronym</th>
+	      <th scope="col">Organization</th>
+	      <th scope="col">Anticipated Attendees</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <th>AASA</th>
+	      <td>The School Superintendents Association</td>
+	      <td>3,000</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">ASHA</th>
+	      <td>American Speech Language Hearing Association</td>
+	      <td>14,100 in 2017</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">CEC</th>
+	      <td>Council for Exceptional Children</td>
+	      <td>4,500</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">CASE</th>
+	      <td>Council of Administrators of Special Education</td>
+	      <td>300 - 500 SPED admins</td>
+	    </tr>
+	    <tr>
+	      <th scope="row">CASP</th>
+	      <td>Council of Autism Service Providers</td>
+	      <td>200 autism therapy execs</td>
+	    </tr>
+	  </tbody>
+	</table>
+	<div class="card float-right" style="width: 18rem;">
+		<div class="card-body">
+			<h5 class="card-title">CASE ENDORSEMENT</h5>
+		    <p class="card-text">
+				Upon successful review of research materials, the Council of Administrators of Special Education (CASE) has agreed to endorse iSocial to its members, the administrators for Special Education across the United States. Once we are endorsed, CASE will actively promote us to school districts as well as State Boards of Education. 
+				<br /><br />
+				CASE will assign a committee to review and confirm the research supporting the iSocial platform. iSocial’s University research team has reviewed CASE’s requirements, and are confident that their seven detailed studies more than exceed the requirements for the endorsement.		
+			</p>
+		</div>
+	</div>
+	<p>
+		To present the company’s image, iSocial will create a tradeshow booth centered around the visual demonstration of the platform. Stations will be available allowing people to explore the environment and experience some of the games available. Brochures, uniforms, and giveaways will also support our product message. 
+	</p>
+	<p>
+		In addition to exhibiting, iSocial will seek to align our research advisors with speaking engagements where they can present research supporting iSocial’s efficacy. 
+	</p>
+	<p>
+	<h4>WEBSITE / BRANDING</h4>
+	<p>	
+		iSocial will present a professional branding image including a video demonstration of our software. The website will be our chance to give our first controlled impression to a prospect, and it’s important that we promote an image of professional education and therapy technology focused on improving the welfare of students with special needs.  
+	</p>
+	<h4>PROACTIVE OUTREACH</h4>
+	<p>
+		iSocial’s management and advisors are well known in the Industry, and we will use our network to generate success stories and promote company news to relevant media across the country. By targeting high-value individuals at conferences and increasing our visibility among key customer segments, iSocial’s team will increase awareness around the solution and it’s benefits to special education students and teachers, making our sales cycles easier. 
+	</p>
+	<p>
+		iSocial Adventures will be promoted to parents and children outside of a school setting. Advertising to children will focus on fun, challenging games and the opportunity to participate in a socially supportive environment.  Parents will be interested in the safety and educational aspects of the platform.
+	</p>
+	<h4>Exclusive Agreement to Co-Promote iSocial with Sandbox & Co.</h4>
+	<p>
+		Sandbox & Co is a millennial marketing and education company made up of award-winning products, platforms and brands purchased from Pearson Learning including, Poptropica, TeacherVision, FamilyEducation and more. One of the two founders of Sandbox & Co is on the NSD board.
+	</p>
+	<p class="lead">
+		In 2017, iSocial executed an exclusive contract with Sandbox & Co to market the iSocial solution for special education to their customers. By co-promoting with Sandbox the iSocial brand will be presented to over 20 million children, teachers and parents worldwide every month. 
+	</p>
+	<p>
+	<ul>
+		<li> TeacherVision is used by one third of all teachers in the United States
+		<li> Poptropica is actively used in 250 countries by over 10.5 million children and parents
+		<li> 1.5 billion visits to their virtual learning worlds in the last 10 years. 
+		<li> <strong>Exclusivity. During the term of this Agreement, Sandbox agrees not to and will not grant, to any third party engaged in the provision of educational services in the area of autism and similar social deficits, any rights substantially and materially similar to those granted to NSD hereunder.” (Taken from the Sandbox and NSD contract signed November 30th, 2017.)</strong>
+	</ul>
+	</p>
+	<div class="container">
+	  <div class="row">
+	    <div class="col-sm my-auto">
+	      <img src="images/IMG - LOGO Sandbox.svg">
+	    </div>
+	    <div class="col-sm my-auto">
+	      <img src="images/IMG - LOGO TeacherVision.svg">
+	    </div>
+	  </div>
+	   <div class="row">
+	    <div class="col-sm my-auto">
+	      <img src="images/IMG - LOGO FamilyEducation.svg">
+	    </div>
+	    <div class="col-sm my-auto">
+	      <img src="images/IMG - LOGO PopTropica.svg">
+	    </div>
+	  </div>
+	</div>
+
+	<h3>Competition & iSocial Advantage</h3>
+	<p class="lead">
+		There are a number of standalone educational games, learning management solutions, and online gaming platforms. We are the only one’s however who have targeted the special education market with a safe, educational gaming environment combined with a comprehensive university-researched curriculum.
+	</p>
+	<p>
+		<h4>iSocial has identified the following as potential competitors:</h4>
+		<ul>
+			<li> PopTropica – This is a 2D educational gaming system designed for children 10 and under, with no special education focus. It does not have a core curriculum like iSocial.</li>
+			<li> SecondLife – This is an older 3D environment with little focus or educational value.</li>
+			<li> Minecraft – Mojang and Microsoft have invested in an education-specific environment for Minecraft. It provides good lesson building tools and has a marketplace for lesson assets, but it too lacks a special education focus (there is an autism-specific environment in Minecraft, but it is not focused on education, just safe gaming) or any comprehensive curriculum.</li>
+			<li> Classcraft – Like Minecraft, Classcraft has an education focus, but lacks an organized curriculum to help special education teachers. It is a much more modern platform, providing us a recent model that we can review while building iSocial’s environment.</li>
+			<li> Paper – Single purpose paper-based exercises like flash cards and posters are still widely used in special education classrooms.</li>
+		</ul>
+		<h4>ISOCIAL ADVANTAGES</h4>
+		<p>We believe iSocial enters the market with a number of advantages that will set us apart from the competition:</p>
+		<ul>
+			<li> Proven solution - iSocial has a unique market advantage in that it was developed by a PhD-led team in a highly respected, university-based research program. It is the only evidence-based program of its type, and has eight technical studies that prove its efficacy. Over 65% of students demonstrated growth through the solution. There is additional anecdotal information from students and parents who loved the sessions.</li>
+			<li>Exclusive and lifetime license - The University of Missouri has granted NSD an exclusive, 99-year license to the IP we use to create, deliver and update the iSocial program.
+			<li> Experienced team of technologists, virtual game developers, speech language pathologists and entrepreneurs - Our iSocial team includes pioneers in virtual and distance learning. Some held key positions in large companies like Apple. Nine of the thirty team members have Ph.Ds. Others have created successful startups in the education and autism markets, including very successful experience creating, developing, and selling SaaS-based solutions to the same schools systems and therapy centers to be served by iSocial.</li>  
+			<li> Significant sales and delivery partners - NSD has an exclusive teaming agreement to co-promote iSocial through Sandbox & Co’s TeacherVision and Family Education brands. Over one-third of all teachers in America use TeacherVision for their lesson plans. This means that over 3.5 million people a month will learn about the benefits of iSocial just through this relationship. The Council of Administrators of Special Education Administrators (CASE) has also agreed to endorse and promote iSocial to the 130,000 schools they serve in the United States.</li>          
+			<li> Natural learning environment - Gaming is very common with children, providing them with familiar environments and controls  they understand and enjoy. They identify closely with computers and mobile devices.</li>
+			<li> Sought after solution - Julie Azuma, the Founder of Different Roads to Learning, a distributor of materials and products for special education, has sold millions of dollars of autism products globally every year for the past 23 years.  When she heard about the iSocial program and read the research results, she said, “Oh, thank God! There is nothing for those kids except for squeeze balls and trampolines.”</li>
+		</ul>
+		<img src="images/IMG - GRAPH Competitive Matrix.svg">
+		<h3>iSocial Team</h3>
+		<p class="lead">
+			The iSocial team is made of industry experts, researchers, and serial entrepreneurs. The team of advisors includes 30 professionals, nine of which hold PhDs in areas relevant to special education and iSocial’s solution.
+		</p>
+
+		<div class="card float-left" style="width: 45%;">
+		  <div class="card-header">
+		    Business Leadership
+		  </div>
+		  <img class="card-img-top" src="images/HS - Bob Etzel 02.jpg" alt="Bob Etzel">
+			<div class="card-body">
+				<h5 class="card-title"><strong>Bob Etzel</strong><br >CEO and Founder</h5>	
+			    <p class="card-text">
+					Bob has over 25 years of experience as president or owner of a preeminent training company focusing on emerging communications and information technologies. He is also known for his work in six successful startup companies, three of which are focusing on mental health solutions. Bob is known for recruiting top national talent in his efforts to create innovative healthcare solutions. His core competence is being the first to introduce new disruptive technologies to solve traditional healthcare problems. Projects include introducing modern wireless communications to the People’s Republic of China for Motorola, developing and deploying the first weapons of mass destruction and mass decontamination training for the 74 hospitals in the City of New York following September 11th 2001 and supporting the University of Kansas’ work in developing prescriptive e-learning for children with disabilities. 
+				</p>
+			</div>
+		</div>
+	
+		<div class="card float-right" style="width: 45%;">
+		  <div class="card-header">
+		    Business Leadership
+		  </div>
+		  <img class="card-img-top" src="images/HS - Dr Wayne Morgan.jpg" alt="Dr. Wayne Morgan">
+			<div class="card-body">
+				<h5 class="card-title"><strong>Wayne Morgan</strong><br >Partner/Advisor</h5>	
+			    <p class="card-text">
+					Wayne Morgan, Ph.D. served as Chief Operating Officer and a Partner at Netchemia, a K-12 Talent Management SaaS software company, for 10+ years. During his tenure, the company experienced dramatic growth, ultimately serving over 2,500 school districts across 47 states. In this role, Dr. Morgan led two add-on acquisitions, a private equity investment from Mainsail Partners, and the eventual sale of the firm to Vista Equity Partners in early 2015. 
+				</p>
+				<p class="card-text">
+					Previously, he served as Chief Information Officer (CIO) for MRI Global. Earlier, he was a Partner and Vice President at Black & Veatch, a global engineering construction and technology company, for over twenty years.
+				</p>
+				<p class="card-text">
+					Dr. Morgan currently is Director of the Growth Mentoring Service at the Enterprise Center in Johnson County (ECJC), a team mentoring program developed and practiced at MIT. He is also the Vice-Chairman of the ECJC Board of Directors and an active angel investor in the Mid-America Angels. He serves in Advisory and Board member roles for three Kansas City area technology startups.
+				</p>
+			</div>
+		</div>
+	
+	
+	
+
+
+
+	</div>
+	<!-- BOOTSTRAP:  Required Links -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
+
