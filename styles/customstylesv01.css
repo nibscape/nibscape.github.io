@@ -1,0 +1,58 @@
+	<style>
+		/* Typeface - GOOGLE FONTS ---------------------------------------------------------------------------------------------------- */
+	    .GOOGLE-Roboto
+	    {
+	    	font-family: 'Roboto';
+	    	font-weight: 400;
+	    }
+	    .GOOGLE-RobotoBold
+	    {
+	    	font-family: 'Roboto';
+	    	font-weight: 700;
+	    	font-style: italic;
+
+	    }
+	   	.GOOGLE-RobotoBoldItalic
+	    {
+	    	font-family: 'Roboto';
+	    	font-weight: 700;
+	    	font-style: italic;
+	    }
+		/* Typeface - CLASSES -------------------------------------------------- */
+		body { padding-top: 86px; }
+		H2
+		{
+	    	font-family: 'Roboto';
+	    	font-weight: 700;
+	    	font-style: italic;
+
+	    	color: rgb(255, 255, 255);
+		}
+		.hero
+		{
+			position: absolute; 
+			box-sizing: border-box; 
+			right: 15%; 
+			left: 15%; 
+			top: 20%; 
+			padding-top: 20px; 
+			padding-bottom: 20px; 
+			z-index: 10; 
+			display: block; 
+			text-align: center;
+		}
+		.herotitle
+		{
+			position: absolute; 
+			box-sizing: border-box; 
+			right: 15%; 
+			left: 15%; 
+			top: 10%; 
+			padding-top: 20px; 
+			z-index: 10; 
+			display: block; 
+			text-align: right;
+		}
+		/* ------ MEDIA QUERIES ------- */
+
+	</style>
