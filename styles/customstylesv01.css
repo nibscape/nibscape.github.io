@@ -53,6 +53,30 @@
 			display: block; 
 			text-align: right;
 		}
+
+		.carousel-item 
+		{
+	    max-height: 700px;
+	    margin: 0 auto;
+		}
+		.carousel-caption p
+		{
+			margin-bottom: 1.25rem;
+			font-size: 1.25rem;
+			line-height: 1.4;
+		}
+		p.lead
+		{
+			color: #FFF;
+		}
+		.btn-primary
+		{
+			background-color: #414142;
+			border: 1px solid white;
+		}
 		/* ------ MEDIA QUERIES ------- */
 
 	</style>
+
+
+
