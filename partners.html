@@ -1,61 +1,21 @@
+---
+# this is an empty front matter
+---
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-
-	<title>Coding Example</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta charset="utf-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Connect to Bootstrap 4 -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700i"> 												<!-- Connect to Google Fonts - This Specific Type Family -->
-	<link rel="stylesheet" href="styles/customstylesv01.css"> <!-- Connect to Customer Style Sheet-->
+	<title>Partners</title>
+	<!---------------------------------- Google Fonts, Bootstrap, Style Sheet, etc. -------------------------------->
+	{% include strings.html %}
+	<!-------------------------------------------------------------------------------------------------------------->
 </head>
 
 <body>
-	<div class="container">
-	
-
-
-
-	<header>
-		<!---------------------------------- Navigation Bar -------------------------------->
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-			<a class="navbar-brand" href="index.html">
-				<img src="images/LOGO - NSD Small.svg" height="60" class="d-inline-block align-top" alt="">
-			</a>
-			 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-		    <ul class="navbar-nav">
-		      <li class="nav-item">
-		        <a class="nav-link" href="company.html">Company</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="team.html">Team</a>
-		      </li>
-		      <li class="nav-item active">
-		        <a class="nav-link" href="partners.html">Partners <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Products
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		          <a class="dropdown-item" href="#">Pupillary Light Response (PLR)</a>
-		          <a class="dropdown-item" href="#">Routine Success</a>
-		          <a class="dropdown-item" href="#">iSocial</a>
-		          <a class="dropdown-item" href="#">iSocial Adventures</a>
-		        </div>
-		      </li>
-		    </ul>
-		  </div>
-		</nav>
-	</header>
-		
-
-	<main>
+	<div class="container-fluid">
+	<!---------------------------------- Navigation Bar -------------------------------->
+	 {% include includenav.html %}
+	<!---------------------------------- Navigation Bar -------------------------------->
+	<main class="container">
 		<p><h4>Partners</h4></p>
-		{% include partnersinfo.html %}
-
 		<!----------------------------------- Partner Card ----------------------------------->
 		<div class="card" style="background-color: #EFEFEF;">
 		  <img src="images/LOGO-UnivMOThompson.svg" class="card-img-top" alt="..." style="max-width: 1000px">
