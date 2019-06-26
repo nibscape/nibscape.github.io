@@ -9,7 +9,7 @@ layout: default
 	<!-------------------------------------------------------------------------------------------------------------->
 </head>
 <body>
-	<div class="container">
+	<main class="container">
 	<!---------------------------------- Navigation Bar -------------------------------->
 	 {% include includenav.html %}
 	<!---------------------------------------------------------------------------------->
@@ -67,7 +67,7 @@ layout: default
 				</a>
 			</div>
 			<!---------------------------------- Carousel -------------------------------->
-	<main role="main" class="container">
+	<div role="main" class="container">
 	<!---------------------------------- Company -------------------------------->
 	<div class="row text-white align-items-center" style="background: linear-gradient(rgba(75, 129, 132, 0.65), rgba(75, 129, 132, 0.65)), url('images/H - COMPANY.jpg'); background-size: 100% auto; background-repeat: no-repeat; min-height: 500px; background-size: cover;">
 		<div class="offset-sm-1 col-sm-10 p-4">
@@ -93,6 +93,7 @@ layout: default
 	    </div>
   	</div>
 	</main>
+	{% include includefooter.html %}
 	<!-- BOOTSTRAP:  Required Links -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
