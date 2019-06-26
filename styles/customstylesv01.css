@@ -59,6 +59,11 @@
 			background-color: #414142;
 			border: 1px solid white;
 		}
+		.row
+		{
+			margin-left: 0px;
+			margin-right: 0px;
+		}
 
 		/*
 		####################################################
