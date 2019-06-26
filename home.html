@@ -8,14 +8,15 @@ layout: default
 	{% include strings.html %}
 	<!-------------------------------------------------------------------------------------------------------------->
 </head>
-<body class="pt-md-5 pt-sm-5 pt-xs-5" style="border: 1px solid red;">
-	<main class="container">
-	<!---------------------------------- Navigation Bar -------------------------------->
-	 {% include includenav.html %}
-	<!---------------------------------------------------------------------------------->
-	</div>
-	<div class="container">
-		<!---------------------------------- Carousel -------------------------------->
+<body>
+	<main>
+		<div>
+			<!---------------------------------- Navigation Bar -------------------------------->
+			 {% include includenav.html %}
+			<!---------------------------------------------------------------------------------->
+		</div>
+		<div role="main" class="container">
+			<!---------------------------------- Carousel -------------------------------->
 			<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 				  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -66,32 +67,43 @@ layout: default
 				  <span class="sr-only">Next</span>
 				</a>
 			</div>
-			<!---------------------------------- Carousel -------------------------------->
-	<div role="main" class="container">
-	<!---------------------------------- Company -------------------------------->
-	<div class="row text-white align-items-center" style="background: linear-gradient(rgba(75, 129, 132, 0.65), rgba(75, 129, 132, 0.65)), url('images/H - COMPANY.jpg'); background-size: 100% auto; background-repeat: no-repeat; min-height: 500px; background-size: cover;">
-		<div class="offset-sm-1 col-sm-10 p-4">
-	  		<p class="head text-right">COMPANY</p>
-	  		<p class="h1 text-left">COMPANY: Our mission is to radically improve the lives of people with autism by combining innovative university research with cutting edge technologies.</p>
-	  		<p class="text-center"><a class="btn btn-primary bc01" style="background-color: #4B8184;" href="company.html" role="button">MORE</a></p>
-	    </div>
-	</div>
-	<!---------------------------------- Team -------------------------------->
-	<div class="row text-white align-items-center" style="background: linear-gradient(rgba(223, 69, 69, 0.65), rgba(223, 69, 69, 0.65)), url('images/H - TEAM.jpg'); background-size: 100% auto; background-repeat: no-repeat; min-height: 500px; background-size: cover;">
-		<div class="offset-sm-1 col-sm-10 p-4">
-      		<p class="head text-right">TEAM</p>
-      		<p class="h1 text-left">TEAM: Our team is made up of industry experts, researchers, and serial entrepreneurs. The team of advisors includes 30 professionals, 9 of whom hold PhDs in areas relevant to special education.</p>
-      		<p class="text-center"><a class="btn btn-primary bc01" style="background-color: #DF4545;" href="team.html" role="button">MORE</a></p>
-	    </div>
-  	</div>
-	<!---------------------------------- Partners -------------------------------->
-	<div class="row text-white align-items-center" style="background: linear-gradient(rgba(249, 209, 147, 0.65), rgba(249, 209, 147, 0.65)), url('images/H - PARTNERS.jpg'); background-size: 100% auto; background-repeat: no-repeat; min-height: 500px; background-size: cover;">
-		<div class="offset-sm-1 col-sm-10 p-4">
-      		<p class="head text-right">PARTNERS</p>
-      		<p class="h1 text-left">PARTNERS: Our exclusive IP licenses, academic research, marketing partnerships, and industry endorsements sets us apart.</p>
-      		<p class="text-center"><a class="btn btn-primary bc01" style="background-color: #F7D193;" href="partners.html" role="button">MORE</a></p>
-	    </div>
-  	</div>
+			<!---------------------------------- Carousel End -------------------------------->
+		</div>
+		<div role="main" class="container-fluid">
+			<div class="row">
+				<div class="offset-xs-0 offset-sm-0 offset-md-0 offset-lg-0 offset-xl-2 col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
+					<div class="contain-fluid">
+
+
+					<!---------------------------------- Company -------------------------------->
+						<div class="row text-white align-items-center" style="background: linear-gradient(rgba(75, 129, 132, 0.65), rgba(75, 129, 132, 0.65)), url('images/H - COMPANY.jpg'); background-size: 100% auto; background-repeat: no-repeat; min-height: 500px; background-size: cover;">
+							<div class="offset-md-1 col-sm-10 p-4">
+						  		<p class="head text-right">COMPANY</p>
+						  		<p class="h1 text-left">COMPANY: Our mission is to radically improve the lives of people with autism by combining innovative university research with cutting edge technologies.</p>
+						  		<p class="text-center"><a class="btn btn-primary bc01" style="background-color: #4B8184;" href="company.html" role="button">MORE</a></p>
+						    </div>
+						</div>
+						<!---------------------------------- Team -------------------------------->
+						<div class="row text-white align-items-center" style="background: linear-gradient(rgba(223, 69, 69, 0.65), rgba(223, 69, 69, 0.65)), url('images/H - TEAM.jpg'); background-size: 100% auto; background-repeat: no-repeat; min-height: 500px; background-size: cover;">
+							<div class="offset-md-1 col-sm-10 p-4">
+					      		<p class="head text-right">TEAM</p>
+					      		<p class="h1 text-left">TEAM: Our team is made up of industry experts, researchers, and serial entrepreneurs. The team of advisors includes 30 professionals, 9 of whom hold PhDs in areas relevant to special education.</p>
+					      		<p class="text-center"><a class="btn btn-primary bc01" style="background-color: #DF4545;" href="team.html" role="button">MORE</a></p>
+						    </div>
+					  	</div>
+						<!---------------------------------- Partners -------------------------------->
+						<div class="row text-white align-items-center" style="background: linear-gradient(rgba(249, 209, 147, 0.65), rgba(249, 209, 147, 0.65)), url('images/H - PARTNERS.jpg'); background-size: 100% auto; background-repeat: no-repeat; min-height: 500px; background-size: cover;">
+							<div class="offset-md-1 col-sm-10 p-4">
+					      		<p class="head text-right">PARTNERS</p>
+					      		<p class="h1 text-left">PARTNERS: Our exclusive IP licenses, academic research, marketing partnerships, and industry endorsements sets us apart.</p>
+					      		<p class="text-center"><a class="btn btn-primary bc01" style="background-color: #F7D193;" href="partners.html" role="button">MORE</a></p>
+						    </div>
+					  	</div>
+					  	<!---------------------------------- ------- -------------------------------->
+					</div>
+				</div>
+			</div>
+		 </div>
 	</main>
 	{% include includefooter.html %}
 	<!-- BOOTSTRAP:  Required Links -->
