@@ -18,10 +18,16 @@
 	    	font-weight: 700;
 	    	font-style: italic;
 	    }
+	    $spacers: 10rem;
 		/* Typeface - CLASSES -------------------------------------------------- */
 		
 		{
-			border: 1px solid white;
+			border: 1px solid red;
+		}
+		p
+		{
+			font-size: 1em;
+			line-height: 1.2em;
 		}
 		body { padding-top: 86px; }
 		.head
@@ -32,61 +38,65 @@
 	    	text-transform: uppercase;
 	    	opacity: .25;
 		}
-		.sub
+		.h1
 		{
 	    	font-family: 'Roboto';
 	    	font-weight: 900;
-	    	font-style: italic;
-	    	font-size: 2.5em; 
-	    	line-height: 1.1;			
+	    	font-style: italic;	
+	    	line-height: 1.1;		
 		}
 		
-		.hero
-		{
-			position: absolute; 
-			box-sizing: border-box; 
-			right: 15%; 
-			left: 15%; 
-			top: 20%; 
-			padding-top: 20px; 
-			padding-bottom: 20px; 
-			z-index: 10; 
-			display: block; 
-			text-align: center;
-		}
-		.herotitle
-		{
-			position: absolute; 
-			box-sizing: border-box; 
-			right: 15%; 
-			left: 15%; 
-			top: 10%; 
-			padding-top: 20px; 
-			z-index: 10; 
-			display: block; 
-			text-align: right;
-		}
 		/* -- Ensures carousel images don't vertically oversize on larger monitors -- */
 		.carousel-item 
 		{
-	    max-height: 700px;
-	    margin: 0 auto;
+			
 		}
 		.carousel-caption p
 		{
-	    	font-family: 'Roboto';
-	    	font-weight: 700;
-	    	font-style: italic;
-			margin-bottom: 1.25rem;
-			font-size: 1.25rem;
-			line-height: 1.15;
+
 		}
 		.btn-primary
 		{
 			background-color: #414142;
 			border: 1px solid white;
 		}
-		/* ------ MEDIA QUERIES ------- */
+
+		/*
+		####################################################
+		M E D I A  Q U E R I E S
+		####################################################
+		*/
+
+		/* Extra small devices (landscape phones, 544px and up) */
+		@media (min-width: 1px) {  
+		    .h1 {font-size: 2em;}
+			.btn {padding: 4px 6px; font-size:12px;}
+		  }
+
+		/* Small devices (landscape phones, 544px and up) */
+		@media (min-width: 544px) {  
+		    .h1 {font-size: 2em;}
+			.btn {padding: 6px 12px; font-size:12px;}
+		  }
+
+		  /* Medium devices (tablets, 768px and up) */
+		  @media (min-width: 768px) {  
+		    .h1 {font-size: 2em;}
+			.btn {padding: 6px 12px; font-size:12px;}
+		  }
+
+		  /* Large devices (desktops, 992px and up) */
+		  @media (min-width: 992px) { 
+		    .h1 {font-size: 2em;}
+			.btn {padding: 6px 12px; font-size:12px;}
+		   }
+		  /* Extra large devices (large desktops, 1200px and up) */
+		  @media (min-width: 1200px) {  
+		    .h1 {font-size: 2.5em;}
+			.btn {padding: 10px 16px; font-size:18px;}
+		  }
+
+
 
 	</style>
 
