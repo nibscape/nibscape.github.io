@@ -20,7 +20,12 @@
 	    }
 	
 		/* Typeface - CLASSES -------------------------------------------------- */
-	
+		
+		body
+		{
+			margin-top: 60px; /* ------ Account for top nav bar height ------- */
+		}
+
 		{
 			border: 1px solid red;
 		}
