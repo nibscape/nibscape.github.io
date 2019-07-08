@@ -25,7 +25,12 @@
 		{
 			margin-top: 60px; /* ------ Account for top nav bar height ------- */
 		}
-
+		.container-fluid
+		{
+			padding-right: 0px; /* ------ Reset Bootstrap default so container spreads edge to edge ------- */
+			padding-left: 0px;  /* ------ Reset Bootstrap default so container spreads edge to edge ------- */
+		}
+		
 		{
 			border: 1px solid red;
 		}
