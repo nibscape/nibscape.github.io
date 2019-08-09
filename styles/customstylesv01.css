@@ -23,7 +23,7 @@
 		
 		body
 		{
-			margin-top: 60px; /* ------ Account for top nav bar height ------- */
+			margin-top: 85px; /* ------ Account for top nav bar height ------- */
 		}
 		.container-fluid
 		{
